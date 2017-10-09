@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title> GitHub introduction </title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/white.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2> GitHub: What? Why? How?</h2>
+					<img src="./assets/images/github-logo.png" alt="ocotcat">
+				</section>
+
+				<section>
+					<h2> Version control </h2>
+					<p> Management of changes, called revisions to any types of
+						information</p>
+					<ul>
+							<li> Simple file versioning add v1.0, v1.1, …  to filenames</li>
+							<li>Simple tools: Google Drive, Dropbox...</li>
+							<li>Advanced tools: subversion and git</li>
+					</ul>
+					<p><strong>Revision</strong>:Change associated with a timestamp
+						and the person making the change </p>
+				</section>
+				<section>
+					<h2>Benefits of version control</h2>
+					<ul>
+						<li> Go back to previous versions</li>
+						<li>Store history of changes</li>
+						<li> Collaborate with others</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Git: a distributed version control system</h2>
+					<p>Git allows us to collaboratively work on the same
+					documents at the same time, and without stepping on each
+					other's toes </p>
+					<img src="./assets/images/git_2x.png" alt="git"
+					height="400px" style="float: left">
+					<img src="./assets/images/git_commit.png" alt="gitcom"
+					height="200px">
+					<small><a href="https://xkcd.com">Image attributions: https://xkcd.com
+1296 & 1597</a></small>
+				</section>
+
+
+		<section>
+			<h2> Interacting with Git </h2>
+			<ul>
+				<li>Online</li>
+				<li> Using a GUI (graphical user interface) application </li>
+				<li> Via the command line </li>
+				<li> Via IDEs: Rstudio, PyCharm </li>
+			</ul>
+		</section>
+
+		<section>
+			<h2> Hands on!</h2>
+			<img src="./assets/slides-img/login.png" alt="login" height="400px">
+		</section>
+
+		<section>
+			<h2> My first repo </h2>
+			Steps 1- 3
+		</section>
+
+		<section>
+			<h2>Git /GitHub terms</h2>
+			<ul>
+				<li> <strong>Repository</strong>: a project where all your files are,
+					online or on your computer</li>
+					<li><strong>Commit</strong>: saving a version of file(s)</li>
+					<li><strong>Issues</strong>: to-do list of tasks, bugs and
+						things you wish to accomplish </li>
+					<li><strong>Branches</strong>: copies of the project</li>
+					<img src="./assets/slides-img/branch.png" alt="branch"
+					width="300px" >
+			</ul>
+		</section>
+
+		<section>
+			<h2>More terms</h2>
+			<ul>
+				<li><strong>Pull request</strong>: request to add your changes from a
+					branch back into master </li>
+				<li><strong>Merge</strong>: act of incorporating new changes (commits)
+					 from one branch to another</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2> My first repo </h2>
+			Steps 4 onwards
+		</section>
+
+	</div>
+	</div>
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
